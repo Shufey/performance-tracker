@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+
+
+.toast{
+    @apply h-20 w-40 bg-red-950
+}
+
+.task-ul li{
+    @apply w-[90%] flex items-center pb-2 pt-2;
+  }
+
+
+
+.taskCompleted{
+    @apply appearance-none h-4 w-4 border-2 border-purple-950 rounded-full cursor-pointer;
+}
+
+.taskCompleted:checked {
+    @apply bg-purple-950 border-purple-500;
+  }
+
+.task{
+    @apply w-[45%] text-start pl-2;
+}
+
+.actionBtns{
+    @apply w-[35%] flex gap-2;
+}
+
+
+
+.actionBtns button{
+    @apply w-14 h-6 text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm text-center ;
+}
+
+.actionBtns button.startTask {
+    @apply bg-green-500 text-black hover:bg-green-600;
+}
+
+.actionBtns button.deleteTask {
+    @apply bg-red-500 text-black hover:bg-red-600;
+}
+
+.actionBtns button.pauseTask {
+    @apply bg-yellow-500 text-black hover:bg-yellow-600;
+}
+
+
+.workingTime {
+    @apply w-[20%] text-start font-semibold;
+}
+
+.remainingTime{
+    @apply w-[10%] text-start font-semibold;
+}
+
+
+
+@tailwind utilities;
+
+
